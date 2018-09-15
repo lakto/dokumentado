@@ -31,7 +31,7 @@ links:
 
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /assets/images/touch-icon.png
+logo: ./assets/images/touch-icon.png
 description: Salsah is the generic user interface for Knora — a virtual research environment for the humanities.
 author:
   name: Digital Humanities Lab, University of Basel
