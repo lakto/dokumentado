@@ -1,3 +1,11 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+
 address {
   font-size: inherit !important;
 }
