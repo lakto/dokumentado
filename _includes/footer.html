@@ -1,0 +1,73 @@
+<footer class="mdl-mega-footer">
+    <div class="mdl-mega-footer__middle-section">
+
+        <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading"></h1>
+            <ul class="mdl-mega-footer__link-list">
+                <li>Salsah is developed by the team at the {{ site.links.dhlab }} and the {{ site.links.dasch }}</li>
+            </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+
+            <h1 class="mdl-mega-footer__heading"></h1>
+            <ul class="mdl-mega-footer__link-list">
+
+
+            </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading"></h1>
+            <ul class="mdl-mega-footer__link-list">
+                <li>
+                    <address>
+                        <a href="https://www.google.com/maps/place/{{ site.company.address | url_encode }}">
+                            {% include icons/address.html icon="place" %} {{ site.company.address }}
+                        </a>
+                    </address>
+                </li>
+                <li class="email">
+                    <a href="mailto:{{ site.company.email }}">
+                        {% include icons/address.html icon="email" %} {{ site.company.email }}
+                    </a>
+                </li>
+                <li class="phone">
+                    <a href="tel:{{ site.company.phone | replace: ' ', '-' }}">
+                        {% include icons/address.html icon="phone" %} {{ site.company.phone }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading"></h1>
+            <ul class="mdl-mega-footer__link-list">
+                <li>
+                    <a class="github" href="https://www.github.com/{{ site.company.github }}">
+                        {% include icons/social-media.html social_icon="github" %}&nbsp;&nbsp;{{ site.company.github }}
+                    </a>
+                </li>
+                <li>
+                    <a class="twitter" href="https://twitter.com/{{ site.company.twitter }}">
+                        {% include icons/social-media.html social_icon="twitter" %}&nbsp;{{ site.company.twitter }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="mdl-mega-footer__bottom-section">
+        <div class="mdl-logo">Salsah docs</div>
+        <ul class="mdl-mega-footer__link-list">
+            <li><a href="https://dhlab.unibas.ch">Content by DHLab</a></li>
+            <li><a href="https://lakto.design">Template by lakto.design</a></li>
+        </ul>
+    </div>
+
+</footer>

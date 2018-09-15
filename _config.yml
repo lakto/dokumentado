@@ -1,0 +1,108 @@
+# ----
+# Site
+
+title: Salsah Documentation
+url: https://dhlab-basel.github.io/Salsah
+version: v2.0.0-alpha.15
+baseurl:
+google_analytics_key:
+show_full_navigation: true
+
+company:
+  company_name: DHLab Basel
+  mission_statement: Digital Humanities Lab and Data and Service Center for the Humanities (DaSCH).
+  address: Bernoullistrasse 32, 4056 Basel
+  phone: +41 61 207 04 89
+  email: info@knora.org
+  twitter: dhlabbasel
+  github: dhlab-basel/Salsah
+
+
+
+
+links:
+  knora: <a href="https://knora.org">Knora</a>
+  knora-docs: <a href="https://docs.knora.org">Documentation</a>
+  sipi: <a href="https://sipi.io">Sipi</a>
+  salsah: <a href="https://dhlab-basel.github.io/Salsah">Salsah</a>
+  dhlab: <a href="http://dhlab.unibas.ch">Digital Humanities Lab</a>
+  dasch: <a href="http://dasch.swiss">Data and Service Center for the Humanities</a>
+  unibas: <a href="http://unibas.ch">University of Basel</a>
+
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /assets/images/touch-icon.png
+description: Salsah is the generic user interface for Knora — a virtual research environment for the humanities.
+author:
+  name: Digital Humanities Lab, University of Basel
+  email: info@knora.org
+  twitter: dhlabbasel # twitter username without the @ symbol
+social:
+  name: Digital Humanities Lab, University of Basel
+  links:
+    - https://github.com/dhlab-basel/salsah
+    - https://dhlab.unibas.ch
+    - https://dasch.swiss
+    - https://knora.org
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+collections:
+  docs:
+    title: Documentation
+    permalink: /:path/
+    output: true
+
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880
