@@ -7,6 +7,9 @@ version: v2.0.0-alpha.15
 baseurl:
 google_analytics_key:
 show_full_navigation: true
+git:
+    name: Github
+    url: https://github.com/lakto/dokumentado
 
 company:
   company_name: DHLab Basel
