@@ -5,27 +5,23 @@ title: Salsah
 
 
 <section>
-    <div class="container">
-        <div class="column">
-            <div>
-
-                <h1>System for Annotation and Linkage of Sources in Arts and Humanities</h1>
-                <p>Salsah is the generic user interface for <a href="{{ links.knora }}">Knora</a>, which is a software framework for storing, sharing, and working with primary sources and data in the humanities.</p>
-                <div class="action">
-                    <div class="button">
-                        <a href="/start">Getting started</a>
-                    </div>
-                    <div class="button">
-                        <a href="/documentation">Documentation</a>
-                    </div>
-                </div>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--8-col">
+            <h1 class="mdl-typography--display-1">System for Annotation and Linkage of Sources in Arts and
+                Humanities</h1>
+            <h2 class="mdl-typography--headline">Salsah is the generic user interface for <a href="{{ links.knora }}">Knora</a>,
+                which is a software framework for storing, sharing, and working with primary sources and data in the
+                humanities.</h2>
+            <div class="action">
+                {% assign grouped = site.docs | group_by: 'category' %}
+                {% for group in grouped %}
+                {% assign items = group.items | sort: 'order' %}
+                <a class="mdl-button mdl-js-button outlined rounded" href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+                {% endfor %}
             </div>
-
         </div>
-        <div class="column">
-            <div class="img-column">
-                <img class="desktop intro-image" src="./assets/images/digital-typewriter.png" alt="Digital Typewriter">
-            </div>
+        <div class="mdl-cell mdl-cell--4-col">
+            <img class="desktop-only intro-image" src="./assets/images/digital-typewriter.png" alt="Digital Typewriter">
         </div>
     </div>
 </section>
@@ -92,17 +88,17 @@ title: Salsah
 <!-- e.g. in the container "Our Mission" (please replace the title) or in the next container with the class "quote" -->
 
 {% for post in site.features limit: 3 %}
-    <div class="container">
-        <div class="columns">
-            <div>
-                <!--<img class="desktop shadow" src="./assets/images/annotations.jpg" alt="Work with humanities data">-->
-            </div>
-            <div>
-                <h2>{{ post.title }}</h2>
-                <p>{{ post.content }}</p>
-            </div>
+<div class="container">
+    <div class="columns">
+        <div>
+            <!--<img class="desktop shadow" src="./assets/images/annotations.jpg" alt="Work with humanities data">-->
+        </div>
+        <div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
         </div>
     </div>
+</div>
 {% endfor %}
 
 <div class="container">
@@ -112,9 +108,12 @@ title: Salsah
         </div>
         <div>
             <h2>Create, Store, Share, and Work with Humanities Data</h2>
-            <p>A Knora repository is a place for doing research. Knora can store texts, images, audio and video recordings,
-                metadata, annotations, text markup, and any other data created by humanities research. It is designed for
-                long-term preservation, and at the same time it provides powerful tools for searching, annotating, extending,
+            <p>A Knora repository is a place for doing research. Knora can store texts, images, audio and video
+                recordings,
+                metadata, annotations, text markup, and any other data created by humanities research. It is designed
+                for
+                long-term preservation, and at the same time it provides powerful tools for searching, annotating,
+                extending,
                 linking, sharing, and reusing data.</p>
         </div>
     </div>
@@ -125,7 +124,8 @@ title: Salsah
         <div>
             <h2>Find and Link Data across Projects</h2>
             <p>With Knora, you can search for and link data across projects, search for dates in
-                one calendar and find corresponding dates in other calendars, link a word in a text to an annotation of part
+                one calendar and find corresponding dates in other calendars, link a word in a text to an annotation of
+                part
                 of an image, and search for text markup across large numbers of texts.</p>
         </div>
         <div>

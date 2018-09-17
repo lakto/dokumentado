@@ -2,7 +2,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
   padding-right: 0;
 }
 
@@ -10,8 +10,7 @@ address {
   font-size: inherit !important;
 }
 
-.no-color {
-  background: #fff !important;
+.mdl-layout__header--transparent {
   color: #2b2b2b !important;
 
   a {
@@ -29,4 +28,22 @@ address {
   margin: 0 auto;
   width: 90vw;
   max-width: 900px;
+}
+
+.intro-image {
+  width: 100%;
+}
+
+.rounded {
+  border-radius: 18px;
+}
+
+.outlined {
+  border: 1px solid #2b2b2b;
+}
+.parent-item {
+  font-weight: 700 !important;
+}
+.child-item {
+  margin-left: 12px !important;
 }

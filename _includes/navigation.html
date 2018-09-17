@@ -8,24 +8,13 @@
     {% assign grouped = site.docs | group_by: 'category' %}
     {% for group in grouped %}
         {% assign items = group.items | sort: 'order' %}
-        <a class="mdl-navigation__link" id="{{ group.name }}" href="#">{{ group.name }}</a>
+        <a class="mdl-navigation__link parent-item" href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
         <!-- child elements -->
-        <!-- sub menu only visible when clicked on the link above -->
-        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-            for="{{ group.name }}">
-            {% for item in items %}
-            <a class="mdl-menu__item" href="{{ site.baseurl }}{{ item.url }}" class="no-color">{{ item.title }}</a>
-            {% endfor %}
+        {% for item in items %}
+        <a class="mdl-navigation__link child-item" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        {% endfor %}
 
-        </ul>
-    <!--
-        <nav class="mdl-navigation">
-            {% for item in items %}
-            <a class="mdl-navigation__link" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-            {% endfor %}
-        </nav>
-    -->
-
+    <hr>
     {% endfor %}
 
     <hr>
@@ -38,23 +27,6 @@
 
     <a class="mdl-navigation__link" href="{{ site.git.url }}" target="_blank">Preview on {{ site.git.name }}</a>
 </nav>
-
-<!-- Left aligned menu below button -->
-<nav class="mdl-navigation">
-    <a id="submenu" class="mdl-navigation__link" href="#">Link</a>
-    <a class="mdl-navigation__link" href="">Link</a>
-    <a class="mdl-navigation__link" href="">Link</a>
-    <a class="mdl-navigation__link" href="">Link</a>
-</nav>
-
-<!-- sub menu only visible when clicked on the link above -->
-<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-    for="submenu">
-    <li class="mdl-menu__item">Some Action</li>
-    <li class="mdl-menu__item">Another Action</li>
-    <li disabled class="mdl-menu__item">Disabled Action</li>
-    <li class="mdl-menu__item">Yet Another Action</li>
-</ul>
 
 <!--
 
