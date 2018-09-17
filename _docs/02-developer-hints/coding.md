@@ -1,6 +1,6 @@
 ---
 title: Code style
-category: Developer Hints
+category: Developer Documentation
 order: 2
 ---
 
