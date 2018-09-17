@@ -1,6 +1,6 @@
 ---
 title: App structure
-category: Developer Documentation
+category: Documentation
 order: 1
 ---
 
