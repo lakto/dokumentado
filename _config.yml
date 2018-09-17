@@ -62,28 +62,40 @@ collections:
 
 permalink: pretty
 
+collections:
+    docs:
+        title: Documentation
+        permalink: /:path/
+        output: true
+
 defaults:
-  -
+-
     scope:
-      path: ""
-      type: "posts"
+        path: ""
     values:
-      layout: "post"
-      _options:
-        content:
-          width: 1880
-          height: 1880
-  -
+        layout: default
+-
     scope:
-      path: ""
-      type: "docs"
+        path: ""
+        type: "docs"
     values:
-      layout: "post"
-      _options:
-        content:
-          width: 1880
-          height: 1880
-  -
+        seo:
+            type: Article
+        _comments:
+            category: Group navigation links with this field
+            order: Used to sort links in the navigation
+        _options:
+            content:
+                width: 800
+                height: 2000
+-
+    scope:
+        path: ""
+        type: "releasenotes"
+    values:
+        _comments:
+            type: Marks the impact of this release
+-
     scope:
       path: ""
     values:

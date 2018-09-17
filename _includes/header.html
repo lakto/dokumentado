@@ -3,7 +3,7 @@
     <div class="mdl-layout__header-row">
         <!-- Title -->
         <span class="mdl-layout-title">
-            <a href="/">Title</a></span>
+            <a href="/">{{ site.title }}</a></span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
@@ -14,8 +14,6 @@
             <div class="mdl-textfield__expandable-holder">
                 <form action="{{ site.baseurl }}/search/" method="get">
                     <input type="search" class="mdl-textfield__input" name="q" id="search-input" placeholder="Search">
-
-
                     <input type="submit" value="Search" style="display: none">
                 </form>
 
@@ -25,7 +23,7 @@
     <!-- Bottom row, not visible on scroll -->
     <div class="mdl-layout__header-row">
         <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
-        {% include navigation.html %}
+        <!-- Navigation in the header (not used at the moment) -->
+        <!-- {!--% include navigation.html %--} -->
     </div>
 </header>

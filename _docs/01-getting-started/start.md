@@ -1,7 +1,7 @@
 ---
-title: Documentation
-category: documentation
-order: 0
+title: Start the app
+category: Getting Started
+order: 2
 ---
 
 ### Install the app dependencies
