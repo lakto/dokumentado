@@ -4,7 +4,7 @@
 title: Salsah Documentation
 url: https://dhlab-basel.github.io/Salsah
 version: v2.0.0-alpha.15
-baseurl: dokumentado
+baseurl:
 google_analytics_key:
 show_full_navigation: true
 git:
@@ -53,13 +53,6 @@ social:
 # Build
 
 timezone: Etc/UTC
-
-collections:
-  docs:
-    title: Documentation
-    permalink: /:path/
-    output: true
-
 
 permalink: pretty
 
