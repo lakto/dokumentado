@@ -1,27 +1,12 @@
 <footer class="mdl-mega-footer">
-    <div class="mdl-mega-footer__middle-section">
-
-        <div class="mdl-mega-footer__drop-down-section">
-            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer__heading"></h1>
-            <ul class="mdl-mega-footer__link-list">
-                <li>Salsah is developed by the team at the {{ site.links.dhlab }} and the {{ site.links.dasch }}</li>
-            </ul>
+    <div class="mdl-mega-footer__top-section mdl-grid">
+        <div class="mdl-cell mdl-cell--3-col">
+            Salsah is developed by the team at the {{ site.links.dhlab }} and the {{ site.links.dasch }}; {{ site.links.unibas }}.
         </div>
 
-        <div class="mdl-mega-footer__drop-down-section">
-            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <div class="mdl-cell mdl-cell--1-col"></div>
 
-            <h1 class="mdl-mega-footer__heading"></h1>
-            <ul class="mdl-mega-footer__link-list">
-
-
-            </ul>
-        </div>
-
-        <div class="mdl-mega-footer__drop-down-section">
-            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer__heading"></h1>
+        <div class="mdl-cell mdl-cell--4-col">
             <ul class="mdl-mega-footer__link-list">
                 <li>
                     <address>
@@ -43,9 +28,7 @@
             </ul>
         </div>
 
-        <div class="mdl-mega-footer__drop-down-section">
-            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-            <h1 class="mdl-mega-footer__heading"></h1>
+        <div class="mdl-cell mdl-cell--4-col">
             <ul class="mdl-mega-footer__link-list">
                 <li>
                     <a class="github" href="https://www.github.com/{{ site.company.github }}">
@@ -59,14 +42,13 @@
                 </li>
             </ul>
         </div>
-
     </div>
 
     <div class="mdl-mega-footer__bottom-section">
-        <div class="mdl-logo">Salsah docs</div>
+        <div class="mdl-logo">{{ site.git.repository }}<br><a href="/">Documentation</a></div>
         <ul class="mdl-mega-footer__link-list">
-            <li><a href="https://dhlab.unibas.ch">Content by DHLab</a></li>
-            <li><a href="https://lakto.design">Template by lakto.design</a></li>
+            <li>Content<br>{{ site.links.dhlab }}</li>
+            <li>Template<br><a href="https://lakto.design">lakto.design</a></li>
         </ul>
     </div>
 

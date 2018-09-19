@@ -9,6 +9,7 @@ google_analytics_key:
 show_full_navigation: true
 git:
     name: Github
+    repository: Salsah
     url: https://github.com/lakto/dokumentado
 
 company:

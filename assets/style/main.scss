@@ -25,6 +25,7 @@ address {
 
 .mdl-layout__header--transparent {
   color: $dark !important;
+  padding-bottom: 96px;
 
   a {
     color: inherit;
@@ -131,4 +132,13 @@ section {
   border-top: 0;
 
   box-sizing: border-box;
+}
+
+mdl-mega-footer__middle-section {
+
+  margin: 0 auto;
+
+  .mdl-mega-footer__drop-down-section {
+    width: 30%;
+  }
 }
