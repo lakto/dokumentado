@@ -47,16 +47,15 @@ layout: default
 </nav>
 -->
 
+<div class="section-content">
+    <h2>{{ page.title }}</h2>
 
-    <div class="content">
-        <h2>{{ page.title }}</h2>
+    {{ content }}
 
-        {{ content }}
-
-        {% if page.link %}
-        <p class="center">
-            <br>
-            <a href={{ page.link }}>&rarr; Read more on GitHub</a>
-        </p>
-        {% endif %}
-    </div>
+    {% if page.link %}
+    <p class="center">
+        <br>
+        <a href={{ page.link }}>&rarr; Read more on GitHub</a>
+    </p>
+    {% endif %}
+</div>

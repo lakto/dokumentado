@@ -43,13 +43,15 @@ address {
 }
 
 .page-content {
-  width: 100vw;
+//  width: 100vw;
 }
 
 .section-content {
   margin: 0 auto;
-  max-width: 900px;
-  width: 90vw;
+  padding: 48px;
+  max-width: 940px;
+//  max-width: 900px;
+//  width: 90vw;
 }
 
 .intro-image {

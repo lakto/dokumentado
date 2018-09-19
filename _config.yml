@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Salsah Documentation
+title: Salsah
 url: https://dhlab-basel.github.io/Salsah
 version: v2.0.0-alpha.15
 baseurl:
@@ -22,8 +22,6 @@ company:
   github: dhlab-basel/Salsah
 
 
-
-
 links:
   knora: <a href="https://knora.org">Knora</a>
   knora-docs: <a href="https://docs.knora.org">Documentation</a>
@@ -41,7 +39,6 @@ description: Salsah is the generic user interface for Knora — a virtual resear
 author:
   name: Digital Humanities Lab, University of Basel
   email: info@knora.org
-  twitter: dhlabbasel # twitter username without the @ symbol
 social:
   name: Digital Humanities Lab, University of Basel
   links:
@@ -74,6 +71,7 @@ defaults:
         path: ""
         type: "docs"
     values:
+        layout: post
         seo:
             type: Article
         _comments:
