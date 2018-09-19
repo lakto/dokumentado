@@ -2,11 +2,14 @@
     <!-- Top row, always visible -->
     <div class="mdl-layout__header-row">
         <!-- Title -->
-        <a href="{{ site.baseurl }}/">
+        {% unless page.layout != 'default' %}
+        <a href="{{ site.baseurl }}/" class="title">
+            <img src="{{ site.baseurl }} {{ site.logo }}" class="logo">
             <h1 class="mdl-typography--display-1">
                 {{ site.title }}
             </h1>
         </a>
+        {% endunless %}
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">

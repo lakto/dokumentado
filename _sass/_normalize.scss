@@ -88,8 +88,10 @@ address {
   margin: 0 auto;
   padding: 48px;
   max-width: 896px;
-  //  max-width: 900px;
-  //  width: 90vw;
+  
+  &.no-padding-top {
+    padding-top: 0;
+  }
 }
 
 .intro-image {

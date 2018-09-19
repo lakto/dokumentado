@@ -35,7 +35,7 @@ links:
 
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: ./assets/images/touch-icon.png
+logo: /assets/images/touch-icon.png
 description: Dokumentado is a landing page and documentation template for Jekyll, useful for GitHub pages.
 author:
   name: André Kilchenmann
@@ -92,14 +92,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
-
-# -----------
-# CloudCannon
-
-_options:
-  header_background_image:
-    width: 1880
-    height: 1880
-  newsletter_background_image:
-    width: 1880
-    height: 1880
