@@ -81,6 +81,7 @@ address {
 
 .page-content {
   //  width: 100vw;
+  min-height: calc(100vh - 76px - 256px);
 }
 
 .section-content {
