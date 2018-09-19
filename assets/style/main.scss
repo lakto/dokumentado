@@ -38,6 +38,23 @@ address {
 
 }
 
+@media screen and (max-width: 1024px) {
+  .mdl-layout__header {
+     display: flex !important;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  section:first-child {
+    padding-top: 0;
+  }
+
+  .mdl-cell--hide-phone {
+    display: none;
+  }
+}
+
 .mdl-layout__drawer-button {
   color: $dark !important;
 }
@@ -93,7 +110,8 @@ address {
 
 .no-hidden-overflow {
   overflow: visible !important;
-  margin: 24px auto 24px auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .smaller-headline {
