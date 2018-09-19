@@ -12,7 +12,11 @@ a {
 
 section {
   width: 100%;
-  padding: 24px 0;
+  padding: 24px 0 96px 0;
+
+  &:first-child {
+    padding-top: 96px;
+  }
 
   &.darker {
     background: #f8fafb;
@@ -25,7 +29,7 @@ address {
 
 .mdl-layout__header--transparent {
   color: $dark !important;
-  padding-bottom: 96px;
+  padding-bottom: 12px;
 
   a {
     color: inherit;
@@ -70,10 +74,6 @@ address {
 
 .child-item {
   margin-left: 12px !important;
-}
-
-section {
-  padding-bottom: 48px;
 }
 
 .card-topic {
