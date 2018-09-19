@@ -41,7 +41,7 @@
 
 <body>
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+<div class="mdl-layout mdl-js-layout {% unless page.layout == 'default' %}mdl-layout--fixed-drawer{% endunless %}">
 
     <!-- header -->
     {% include header.html %}
