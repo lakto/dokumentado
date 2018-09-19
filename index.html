@@ -4,7 +4,7 @@ title: Salsah
 ---
 
 <!-- introduction -->
-<section>
+<section class="padding-top">
     <div class="section-content mdl-grid">
         <div class="mdl-cell mdl-cell--7-col">
             <h1 class="mdl-typography--display-1">System for Annotation and Linkage of Sources in Arts and
@@ -31,97 +31,9 @@ title: Salsah
     <div class="section-content">
         <h2 class="mdl-typography--display-1 mdl-typography--text-center">Features</h2>
         <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-card simple-border no-hidden-overflow mdl-typography--text-center">
-                <div class="card-topic simple-border-bottom">
-                    <button class="mdl-button mdl-js-button mdl-button--fab card-topic-icon">
-                        <i class="material-icons">storage</i>
-                    </button>
-                </div>
-                <div class="mdl-card__title">
-                    <h4 class="mdl-card__title-text">Longevity of Humanities Data</h4>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <p class="mdl-typography--headline mdl-typography--font-light smaller-headline">
-                        Knora keeps data accessible and reusable, even as technologies change.
-                    </p>
-                </div>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-card simple-border no-hidden-overflow mdl-typography--text-center">
-                <div class="card-topic simple-border-bottom">
-                    <button class="mdl-button mdl-js-button mdl-button--fab card-topic-icon">
-                        <i class="material-icons">share</i>
-                    </button>
-                </div>
-
-                <div class="mdl-card__title">
-                    <h4 class="mdl-card__title-text">Citable and Reusable</h4>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <p class="mdl-typography--headline mdl-typography--font-light smaller-headline">
-                        Anything in Knora can be annotated, cited, published as Linked Open Data, and reused in new research.
-                    </p>
-                </div>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-card simple-border no-hidden-overflow mdl-typography--text-center">
-                <div class="card-topic simple-border-bottom">
-                    <button class="mdl-button mdl-js-button mdl-button--fab card-topic-icon">
-                        <i class="material-icons">search</i>
-                    </button>
-                </div>
-                <div class="mdl-card__title">
-                    <h4 class="mdl-card__title-text">Powerful Searches</h4>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <p class="mdl-typography--headline mdl-typography--font-light smaller-headline">
-                        Search for relationships between text, metadata, annotations, markup, links, and more.
-                    </p>
-                </div>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-card simple-border no-hidden-overflow mdl-typography--text-center">
-                <div class="card-topic simple-border-bottom">
-                    <button class="mdl-button mdl-js-button mdl-button--fab card-topic-icon">
-                        <i class="material-icons">history</i>
-                    </button>
-                </div>
-                <div class="mdl-card__title">
-                    <h4 class="mdl-card__title-text">History</h4>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <p class="mdl-typography--headline mdl-typography--font-light smaller-headline">
-                        When data changes, Knora preserves past versions, so you can still view and cite them.
-                    </p>
-                </div>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-card simple-border no-hidden-overflow mdl-typography--text-center">
-                <div class="card-topic simple-border-bottom">
-                    <button class="mdl-button mdl-js-button mdl-button--fab card-topic-icon">
-                        <i class="material-icons">perm_identity</i>
-                    </button>
-                </div>
-                <div class="mdl-card__title">
-                    <h4 class="mdl-card__title-text">Control Access</h4>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <p class="mdl-typography--headline mdl-typography--font-light smaller-headline">
-                        You decide who can view and change data in your project.<br>&nbsp;
-                    </p>
-                </div>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col mdl-card simple-border no-hidden-overflow mdl-typography--text-center">
-                <div class="card-topic simple-border-bottom">
-                    <button class="mdl-button mdl-js-button mdl-button--fab card-topic-icon">
-                        <i class="material-icons">web</i>
-                    </button>
-                </div>
-                <div class="mdl-card__title">
-                    <h4 class="mdl-card__title-text">User Interface</h4>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <p class="mdl-typography--headline mdl-typography--font-light smaller-headline">
-                        Easy to use (generic) web application. Or build your own app with {{ site.links.knora-ui }}.
-                    </p>
-                </div>
-            </div>
+            {% for feature in site.features limit: 6 %}
+                {% include feature.html %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -167,21 +79,6 @@ title: Salsah
 </section>
 
 
-
-{% for post in site.features limit: 3 %}
-<div class="container">
-    <div class="columns">
-        <div>
-            <!--<img class="desktop shadow" src="./assets/images/annotations.jpg" alt="Work with humanities data">-->
-        </div>
-        <div>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.content }}</p>
-        </div>
-    </div>
-</div>
-{% endfor %}
-
 <!-- Contribute -->
 <section class="darker">
     <div class="section-content mdl-typography--text-center">
@@ -193,7 +90,7 @@ title: Salsah
     </div>
 </section>
 
-<!-- News -->
+<!-- News: release notes -->
 <section>
     <div class="section-content">
         <h2 class="mdl-typography--display-1 mdl-typography--text-center">News</h2>

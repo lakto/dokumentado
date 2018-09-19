@@ -1,8 +1,9 @@
 <nav {% if site.show_full_navigation %} class="mdl-navigation" {% endif %}>
 
-    <span class="mdl-layout-title">
-        <a class="mdl-navigation__link" href="{{ site.baseurl }}/"><span class="mdl-typography--title">{{ site.title }}</span></a>
-    </span>
+    <a class="mdl-layout-title mdl-navigation__link" href="{{ site.baseurl }}/">
+        <span class="mdl-typography--title">{{ site.title }}</span><br>
+        <span class="mdl-card__subtitle-text">{{ site.version }}</span>
+    </a>
 
     <hr class="no-spacing">
 

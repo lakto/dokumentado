@@ -1,28 +1,29 @@
 # ----
 # Site
 
-title: Salsah
-url: https://dhlab-basel.github.io/Salsah
-version: v2.0.0-alpha.15
+title: Dokumentado
+url: https://lakto.github.io/dokumentado
+version: v1.0.0-alpha
 baseurl:
 google_analytics_key:
 show_full_navigation: true
 git:
     name: Github
-    repository: Salsah
+    repository: Dokumentado
     url: https://github.com/lakto/dokumentado
 
 company:
-  company_name: DHLab Basel
-  mission_statement: Digital Humanities Lab and Data and Service Center for the Humanities (DaSCH).
-  address: Bernoullistrasse 32, 4056 Basel
-  phone: +41 61 207 04 89
-  email: info@knora.org
-  twitter: dhlabbasel
-  github: dhlab-basel/Salsah
+  company_name: Lakto.design
+  mission_statement: Rezykliertes, Digitales und mehr
+  address: Solothurn
+  phone:
+  email: info@lakto.org
+  twitter:
+  github: lakto
 
 
 links:
+  company: <a href="https://lakto.design">lakto.design</a>
   knora: <a href="https://knora.org">Knora</a>
   knora-docs: <a href="https://docs.knora.org">Documentation</a>
   knora-ui: <a href="https://npmjs.com/~knora">Knora-ui modules</a>
@@ -35,17 +36,10 @@ links:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: ./assets/images/touch-icon.png
-description: Salsah is the generic user interface for Knora — a virtual research environment for the humanities.
+description: Dokumentado is a landing page and documentation template for Jekyll, useful for GitHub pages.
 author:
-  name: Digital Humanities Lab, University of Basel
-  email: info@knora.org
-social:
-  name: Digital Humanities Lab, University of Basel
-  links:
-    - https://github.com/dhlab-basel/salsah
-    - https://dhlab.unibas.ch
-    - https://dasch.swiss
-    - https://knora.org
+  name: André Kilchenmann
+  email: info@lakto.org
 
 # -----
 # Build
@@ -56,16 +50,21 @@ permalink: pretty
 
 collections:
     docs:
-        title: Documentation
-        permalink: /:path/
         output: true
+        permalink: docs/:path/
+    manual:
+        output: true
+        permalink: man/:path/
+    features:
+        output: true
+        permalink: features/:name
 
 defaults:
 -
     scope:
         path: ""
     values:
-        layout: default
+        layout: "default"
 -
     scope:
         path: ""
@@ -74,13 +73,6 @@ defaults:
         layout: post
         seo:
             type: Article
-        _comments:
-            category: Group navigation links with this field
-            order: Used to sort links in the navigation
-        _options:
-            content:
-                width: 800
-                height: 2000
 -
     scope:
         path: ""
@@ -88,15 +80,12 @@ defaults:
     values:
         _comments:
             type: Marks the impact of this release
--
-    scope:
-      path: ""
-    values:
-      layout: "default"
+
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
 
 exclude:
   - Gemfile
