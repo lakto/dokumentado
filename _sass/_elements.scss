@@ -1,0 +1,18 @@
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: rgba($dark, .18) 1px solid;
+  margin: 3.2em 0;
+  padding: 0;
+
+  &.no-spacing {
+    margin: 0 !important;
+  }
+}
+
+h3::before {
+  content: "";
+  @extend hr;
+  margin: 60px 0;
+}

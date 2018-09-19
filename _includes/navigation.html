@@ -1,10 +1,10 @@
 <nav {% if site.show_full_navigation %} class="mdl-navigation" {% endif %}>
 
     <span class="mdl-layout-title">
-        <a class="mdl-typography--title mdl-navigation__link" href="{{ site.baseurl }}/"><h3 class="mdl-typography--title">{{ site.title }}</h3></a>
+        <a class="mdl-navigation__link" href="{{ site.baseurl }}/"><span class="mdl-typography--title">{{ site.title }}</span></a>
     </span>
 
-    <hr>
+    <hr class="no-spacing">
 
     {% assign grouped = site.docs | group_by: 'category' %}
     {% for group in grouped %}
@@ -15,7 +15,7 @@
         <a class="mdl-navigation__link child-item" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
         {% endfor %}
 
-    <hr>
+    <hr class="no-spacing">
     {% endfor %}
 
     <!--
