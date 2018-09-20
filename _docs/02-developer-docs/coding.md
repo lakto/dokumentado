@@ -1,6 +1,6 @@
 ---
 title: Code style
-category: Documentation
+category: Developer docs
 order: 2
 ---
 

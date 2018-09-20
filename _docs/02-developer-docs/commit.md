@@ -1,6 +1,6 @@
 ---
 title: Commit Message Schema
-category: Documentation
+category: Developer docs
 order: 3
 ---
 

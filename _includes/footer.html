@@ -1,7 +1,7 @@
 <footer class="mdl-mega-footer">
     <div class="mdl-mega-footer__top-section mdl-grid">
         <div class="mdl-cell mdl-cell--3-col">
-            {{ site.description }}
+            {{ site.company.mission_statement }}
         </div>
 
         <div class="mdl-cell mdl-cell--1-col"></div>
@@ -9,6 +9,9 @@
         <div class="mdl-cell mdl-cell--4-col">
             <ul class="mdl-mega-footer__link-list">
                 {% if site.company.address %}
+                <li>
+                    {{ site.links.company }}<br>
+                </li>
                 <li>
                     <address>
                         <a href="https://www.google.com/maps/place/{{ site.company.address | url_encode }}">

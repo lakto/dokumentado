@@ -1,45 +1,45 @@
 # ----
 # Site
 
-title: Dokumentado
-url: https://lakto.github.io/dokumentado
-version: v1.0.0-alpha
+title: Salsah documentation
+url: https://dhlab-basel.github.io/Salsah
+version: v2.0.0-alpha
 baseurl:
 google_analytics_key:
 show_full_navigation: true
 git:
   name: Github
-  repository: Dokumentado
-  url: https://github.com/lakto/dokumentado
+  repository: Salsah
+  url: https://github.com/dhlab-basel/Salsah
 
 company:
-  company_name: Lakto.design
-  mission_statement: Rezykliertes, Digitales und mehr
-  address: Solothurn
-  phone:
-  email: info@lakto.org
-  twitter:
-  github: lakto
+  company_name: Data and Service Center for the Humanities DaSCH
+  mission_statement: The main task of the Data and Service Center for Humanities (DaSCH) is to operate a platform for humanities research data. In addition, the networking of data with other databases is to be promoted (linked open data).
+  address: Bernoullistrasse 32, 4056 Basel
+  phone: +41 (0)61 207 04 89
+  email: info@knora.org
+  twitter: dhlabbasel
+  github: dhlab-basel
 
 
 links:
-  company: <a href="https://lakto.design">lakto.design</a>
+  company: <a href="http://dasch.swiss">Data and Service Center for the Humanities</a>
   knora: <a href="https://knora.org">Knora</a>
   knora-docs: <a href="https://docs.knora.org">Documentation</a>
   knora-ui: <a href="https://npmjs.com/~knora">Knora-ui modules</a>
   sipi: <a href="https://sipi.io">Sipi</a>
   salsah: <a href="https://dhlab-basel.github.io/Salsah">Salsah</a>
   dhlab: <a href="http://dhlab.unibas.ch">Digital Humanities Lab</a>
-  dasch: <a href="http://dasch.swiss">Data and Service Center for the Humanities</a>
+  dasch: <a href="http://dasch.swiss">Data and Service Center for the Humanities DaSCH</a>
   unibas: <a href="http://unibas.ch">University of Basel</a>
 
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/touch-icon.png
-description: Dokumentado is a landing page and documentation template for Jekyll, useful for GitHub pages.
+description: Salsah is the generic user interface for Knora, which is a software framework for storing, sharing, and working with primary sources and data in the humanities.
 author:
-  name: André Kilchenmann
-  email: info@lakto.org
+  name: DHLab and DaSCH
+  email: info@knora.org
 
 # -----
 # Build

@@ -1,7 +1,8 @@
-# Dokumentado
-This is a default template made for Github repository pages incl. landing page, release notes and the documentation.
+# Salsah documentation
 
-It's designed with [Material Design Lite](https://getmdl.io/index.html) and built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+[GitHub page](https://dhlab-basel.github.io/Salsah) with documentation, manual (not yet ready) and landing page for [Salsah](https://github.com/dhlab-basel/Salsah).
+
+It uses the [Dokumentado theme](https://github.com/lakto/dokumentado) and is built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well. 
 
 ## Dependencies
 
