@@ -4,10 +4,13 @@
         <!-- Title -->
         {% unless page.layout != 'default' %}
         <a href="{{ site.baseurl }}/" class="title">
+            {% if site.logo %}
             <img src="{{ site.baseurl }}/{{ site.logo }}" class="logo">
+            {% else %}
             <h1 class="mdl-typography--display-1">
                 {{ site.title }}
             </h1>
+            {% endif %}
         </a>
         {% endunless %}
         <div class="mdl-layout-spacer"></div>
