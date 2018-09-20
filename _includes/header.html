@@ -1,7 +1,9 @@
-<header class="mdl-layout__header mdl-layout__header--transparent">
+<div class="mdl-layout__header mdl-layout__header--transparent">
     <!-- Top row, always visible -->
     <div class="mdl-layout__header-row">
         <!-- Title -->
+
+        <!--
         {% unless page.layout != 'default' %}
         <a href="{{ site.baseurl }}/" class="title">
             {% if site.logo %}
@@ -13,7 +15,10 @@
             {% endif %}
         </a>
         {% endunless %}
+        -->
+
         <div class="mdl-layout-spacer"></div>
+
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
             <label class="mdl-button mdl-js-button mdl-button--icon"
@@ -27,7 +32,9 @@
                 </form>
             </div>
         </div>
-        <div class="github-icon">
+
+
+        <div class="github-icon desktop-only">
             <a class="mdl-button mdl-js-button mdl-button--icon" href="{{ site.git.url }}" target="_blank">
                 <svg aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
@@ -47,4 +54,4 @@
         <!-- {!--% include navigation.html %--} --
     </div>
     -->
-</header>
+</div>
