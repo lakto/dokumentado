@@ -1,9 +1,8 @@
 ---
 title: v2.0.0-alpha.13
 type: pre-release
+link: https://github.com/dhlab-basel/Salsah/releases/tag/v2.0.0-alpha.13
 ---
-
-See the [release](https://github.com/dhlab-basel/Salsah/releases/tag/v2.0.0-alpha.13) on Github.
 
 **Features:**
 

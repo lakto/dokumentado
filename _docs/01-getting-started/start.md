@@ -15,9 +15,11 @@ $ yarn install --production=false
 
 
 ### Start the Salsah app
-Now you can start the app with
+Now you can run the app with
 
-`$ ng serve`
+```
+$ ng serve
+```
 
 which will start a server with the app in a developer mode on [http://localhost:4200/](http://localhost:4200/). 
 

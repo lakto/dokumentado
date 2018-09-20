@@ -1,3 +1,5 @@
+$bg-color: #404145;
+$fg-color: #FAFAFA;
 pre, code, tt {
   font-family: Inconsolata, Consolas, Courier, "Courier New", "Liberation Mono", monospace;
   //font-size: 0.85em;
@@ -6,12 +8,13 @@ pre, code, tt {
   line-height: 1.4;
   font-size: 16px;
   font-weight: 400;
-  background-color: #404145;
-  color: #FAFAFA;
+  background-color: rgba($bg-color, .75);
+  color: $fg-color;
 }
 
 
 pre {
+  background-color: $bg-color;
   box-sizing: border-box;
   margin: 0 0 1.75em 0;
   width: 100%;
@@ -32,6 +35,6 @@ pre {
 blockquote > code,
 li > code,
 p > code {
-  padding: 4px 6px;
+  padding: 2px 6px;
   white-space: nowrap;
 }

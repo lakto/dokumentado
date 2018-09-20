@@ -8,9 +8,9 @@ baseurl:
 google_analytics_key:
 show_full_navigation: true
 git:
-    name: Github
-    repository: Dokumentado
-    url: https://github.com/lakto/dokumentado
+  name: Github
+  repository: Dokumentado
+  url: https://github.com/lakto/dokumentado
 
 company:
   company_name: Lakto.design
@@ -49,46 +49,54 @@ timezone: Etc/UTC
 permalink: pretty
 
 collections:
-    docs:
-        output: true
-        permalink: docs/:path/
-    manual:
-        output: true
-        permalink: man/:path/
-    features:
-        output: true
-        permalink: features/:name
+  docs:
+    output: true
+    permalink: docs/:path/
+  manual:
+    output: true
+    permalink: manual/:path/
+  features:
+    output: true
+    permalink: features/:name
 
 defaults:
 -
-    scope:
-        path: ""
-    values:
-        layout: "default"
+  scope:
+    path: ""
+  values:
+    layout: "default"
 -
-    scope:
-        path: ""
-        type: "docs"
-    values:
-        layout: post
-        seo:
-            type: Article
+  scope:
+    path: ""
+    type: "docs"
+  values:
+    layout: post
+    seo:
+      type: Article
 -
-    scope:
-        path: ""
-        type: "releasenotes"
-    values:
-        _comments:
-            type: Marks the impact of this release
+  scope:
+    path: ""
+    type: "manual"
+  values:
+    layout: post
+    seo:
+      type: Article
+-
+  scope:
+    path: ""
+    type: "releasenotes"
+  values:
+    _comments:
+        type: Marks the impact of this release
 
 
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENCE
