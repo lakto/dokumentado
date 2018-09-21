@@ -14,7 +14,7 @@ title: Salsah
                 {% assign grouped = site.docs | group_by: 'category' %}
                 {% for group in grouped %}
                 {% assign items = group.items | sort: 'order' %}
-                <a class="mdl-button mdl-js-button outlined rounded" href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+                <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored rounded" href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
                 {% endfor %}
             </div>
         </div>
