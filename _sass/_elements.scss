@@ -5,6 +5,7 @@
 .title {
   display: contents;
 }
+
 .logo {
   max-height: 48px;
   padding-right: 12px;
@@ -12,15 +13,12 @@
 
 // content
 
-
 // section
-
 
 // footer
 footer {
   //height: 224px;
 }
-
 
 // hr
 hr {
@@ -46,8 +44,8 @@ h3::before {
 // content
 .feature-content {
   p {
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
-    font-weight: 300!important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300 !important;
     letter-spacing: 0;
     margin: 0 0 16px;
     line-height: 32px;
@@ -58,4 +56,25 @@ h3::before {
 // icons
 .github-icon {
   padding: 0 0 0 24px;
+}
+
+// badges
+.badge {
+//  font-family: "Open Sans", sans-serif;
+  padding: 2px 5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: #eee;
+  font-size: .85em;
+  letter-spacing: 1px;
+
+  &.major {
+    background: #00695c;
+    color: #fff;
+  }
+  &.pre-release {
+    background: #f06a33;
+    color: #fff;
+  }
+
 }
