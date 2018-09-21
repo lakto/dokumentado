@@ -43,9 +43,6 @@
 
 <div class="mdl-layout mdl-js-layout {% unless page.layout == 'default' %}mdl-layout--fixed-drawer{% endunless %}">
 
-    <!-- header -->
-    {% include header.html %}
-
     <div class="mdl-layout__drawer">
 
         {% include navigation.html %}
@@ -54,6 +51,9 @@
 
     <!-- content -->
     <main class="mdl-layout__content">
+        <!-- header -->
+        {% include header.html %}
+
         <div class="page-content">
             {{ content }}
         </div>

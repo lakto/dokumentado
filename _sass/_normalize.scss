@@ -90,9 +90,12 @@ address {
 }
 
 .section-content {
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
-  padding: 48px;
-  max-width: 896px;
+  position: relative;
+  padding: 50px 30px;
+  box-sizing: border-box;
   
   &.no-padding-top {
     padding-top: 0;
