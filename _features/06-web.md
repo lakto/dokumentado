@@ -2,4 +2,5 @@
 title: User Interface
 icon: web
 ---
-Easy to use (generic) web application. Or build your own app with {{ site.links.knora-ui }}.
+Salsah is built with <a href="https://npmjs.com/~knora">Knora user interface modules</a>, which can be reused in own project-specific applications.
+

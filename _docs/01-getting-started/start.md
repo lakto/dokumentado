@@ -69,3 +69,6 @@ This will start a server and the app in a developer mode on [http://localhost:42
 By changing the code, the app will automatically compile and it reloads the page.
 
 If you have any trouble to start the Salsah app with ng, you should have a look on the [angular-cli](https://cli.angular.io) documentation.
+
+
+### [&rarr; Contribute]({{ site.baseurl }}/docs/02-developer-docs/structure)

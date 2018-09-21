@@ -22,7 +22,9 @@ Install yarn by following the [instructions on their website](https://yarnpkg.co
 ### Angular-cli
 To start the app or to create new components and services, you need [angular-cli](https://github.com/angular/angular-cli), which should be installed globally.
 
-`$ yarn global add @angular/cli`
+```
+$ yarn global add @angular/cli
+```
 
 <!--
 If there are some permission issues, try to fix the writing rights in node with `sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}` 
