@@ -112,12 +112,12 @@ address {
 
 .rounded {
   border-radius: 100px;
+  padding: 6px 16px;
+  margin: 0 12px;
 }
 
 .outlined {
   border: 1px solid $dark;
-  padding: 6px 16px;
-  margin: 0 12px;
 }
 
 .center {
