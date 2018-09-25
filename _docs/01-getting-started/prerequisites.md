@@ -4,29 +4,22 @@ category: Getting Started
 order: 1
 ---
 
-We develop the Salsah app with Angular 6, especially with Angular-cli, which requires the following tools:
+You can use this template by fork it from [Github](https://github.com/lakto/dokumentado) or to pull it from there. It's built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+
+You have to be in the root directory of Dokumentado to install the dependencies as follow:
+
+~~~bash
+$ bundle install
+~~~
+
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
+
+~~~bash
+$ bundle exec jekyll serve
+~~~
+
+To see the generated site, just visit `http://localhost:4000`.
 
 
-### Node
-Install [Node](https://nodejs.org/en/download/) in version >=4 <=9. We recommend to use version 8.9.0.
-
-The easiest way to install node in the correct version is to use '[n](https://github.com/tj/n)'.
-
-
-### Yarn (instead of npm)
-By installing node, you get the node package manager (npm), which will be used for the app dependency management. But we recommend to use [yarn](https://yarnpkg.com/en/) instead of npm.
-
-Install yarn by following the [instructions on their website](https://yarnpkg.com/en/docs/install).
-
-
-### Angular-cli
-To start the app or to create new components and services, you need [angular-cli](https://github.com/angular/angular-cli), which should be installed globally.
-
-`$ yarn global add @angular/cli`
-
-<!--
-If there are some permission issues, try to fix the writing rights in node with `sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}` 
--->
-
-### [&rarr; Start the app]({{ site.baseurl }}/docs/01-getting-started/start/)
+### [&rarr; Start the app]({{ site.baseurl }}/docs/01-getting-started/configure/)
 
